@@ -13,25 +13,23 @@ export const CategoryFilters = {
 }
 
 /* action creators */
-const addToCart = (productID) => {
+export const addToCart = (productID) => {
 	return {
 		type: ADD_TO_CART,
 		productID
 	}
 }
 
-const removeFromCart = (index) => {
+export const removeFromCart = (index) => {
 	return {
 		type: REMOVE_FROM_CART,
 		index
 	}
 }
 
-const setCategoryFilter = (filter) => {
+export const setCategoryFilter = (filter) => {
 	return {
 		type: SET_CATEGORY_FILTER,
 		filter
 	}
 }
-
-export default { addToCart, removeFromCart, setCategoryFilter }
