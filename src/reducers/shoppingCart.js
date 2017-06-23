@@ -1,0 +1,22 @@
+import { CategoryFilters } from '../actions/actions';
+import { ADD_TO_CART, REMOVE_FROM_CART } from '../actions/actions';
+
+const shoppingCart = (state = [], action) => {
+	const i = action.index;
+
+	switch (action.type) {
+		case ADD_TO_CART:
+			return [...state, {productID: action.productID}]
+
+		case REMOVE_FROM_CART:
+			return [
+				...state.slice(0, i),
+				...state.slice(i + 1)
+			]
+
+		default:
+			return state
+	}
+}
+
+export default shoppingCart;

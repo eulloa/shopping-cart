@@ -1,4 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+/*import React from 'react';
+import { render } from 'react-dom';
 
-ReactDOM.render(<h1>Hello world!</h1>, document.getElementById('root'));
+render(<h1>Hello world!</h1>, document.getElementById('root'));*/
+
+import store from './store';
+
+console.log(store.getState());
