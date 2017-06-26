@@ -1,5 +1,5 @@
-import { CategoryFilters } from '../actions/actions';
-import { SET_CATEGORY_FILTER } from '../actions/actions';
+import { CategoryFilters } from '../actions/actionTypes';
+import { SET_CATEGORY_FILTER } from '../actions/actionTypes';
 
 const visibilityFilter = (state = [], action) => {
 	switch (action.type) {

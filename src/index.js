@@ -1,8 +1,20 @@
-/*import React from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 
-render(<h1>Hello world!</h1>, document.getElementById('root'));*/
+//components
+import App from './components/app';
 
-import store from './store';
+//react router deps
+import { Router, Route, IndexRoute } from 'react-router';
+import { Provider } from 'react-redux';
+import store, { history } from './store';
 
-console.log(store.getState());
+const router = (
+	<Provider store={store}>
+		<Router history={history}>
+			<Route path="/" component={App}></Route>
+		</Router>
+	</Provider>
+)
+
+render(router, document.getElementById('root'));

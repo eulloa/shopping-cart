@@ -1,5 +1,5 @@
-import { CategoryFilters } from '../actions/actions';
-import { ADD_TO_CART, REMOVE_FROM_CART } from '../actions/actions';
+import { CategoryFilters } from '../actions/actionTypes';
+import { ADD_TO_CART, REMOVE_FROM_CART } from '../actions/actionTypes';
 
 const shoppingCart = (state = [], action) => {
 	const i = action.index;
