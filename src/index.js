@@ -5,15 +5,18 @@ import { render } from 'react-dom';
 import App from './components/app';
 
 //react router deps
-import { Router, Route, IndexRoute } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store, { history } from './store';
+import store from './store';
+
+//css
+import './index.css';
 
 const router = (
 	<Provider store={store}>
-		<Router history={history}>
-			<Route path="/" component={App}></Route>
-		</Router>
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
 	</Provider>
 )
 

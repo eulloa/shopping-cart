@@ -6,8 +6,9 @@ export const SET_CATEGORY_FILTER = 'SET_CATEGORY_FILTER';
 /* category filters */
 export const CategoryFilters = {
 	ALL: 			   'ALL',
-	TECHNOLOGY: 	   'TECHNOLOGY',
+	BOOKS: 			   'BOOKS',
 	HOME_IMPROVEMENT:  'HOME_IMPROVEMENT',
 	KITCHEN: 		   'KITCHEN',
-	BOOKS: 			   'BOOKS'
+	MUSIC:             'MUSIC',
+	TECHNOLOGY: 	   'TECHNOLOGY'
 }
