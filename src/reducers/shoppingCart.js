@@ -1,11 +1,14 @@
 import { ADD_TO_CART, REMOVE_FROM_CART } from '../actions/actionTypes';
 
-const shoppingCart = (state = [], action) => {
+const shoppingCart = (state = {}, action) => {
 	const i = action.index;
 
 	switch (action.type) {
 		case ADD_TO_CART:
-			return [...state, {productID: action.productID}]
+			return [ 
+				...state, 
+				{ productID: action.productID } 
+			]
 
 		case REMOVE_FROM_CART:
 			return [

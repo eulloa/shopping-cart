@@ -1,6 +1,6 @@
 const allProducts = [
 	{
-		id: 1,
+		productID: 1,
 		name: 'MacBook Pro',
 		price: 19.99,
 		description: 'The best damn product ever!',
@@ -13,7 +13,7 @@ const allProducts = [
 		category: 'TECHNOLOGY'
 	},
 	{
-		id: 2,
+		productID: 2,
 		name: 'Harry Potter and the Prisoner of Azkaban',
 		price: 19.99,
 		description: 'The best damn product ever!',
@@ -26,7 +26,7 @@ const allProducts = [
 		category: 'BOOKS'
 	},
 	{
-		id: 3,
+		productID: 3,
 		name: 'The Beatles - Meet the Beatles',
 		price: 19.99,
 		description: 'The best damn product ever!',
@@ -39,7 +39,7 @@ const allProducts = [
 		category: 'MUSIC'
 	},
 	{
-		id: 4,
+		productID: 4,
 		name: 'Microwave',
 		price: 19.99,
 		description: 'The best damn product ever!',

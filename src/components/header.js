@@ -21,7 +21,7 @@ const Header = (props) => {
 }
 
 Header.propTypes = {
-
+	onChange: PropTypes.func.isRequired 
 }
 
 export default Header;

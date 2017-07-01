@@ -7,7 +7,7 @@ import Main from './main';
 const mapStateToProps = (state) => {
 	return {
 		allProducts: state.allProducts,
-		shoppingCart: [],
+		shoppingCart: state.shoppingCart,
 		visibilityFilter: state.visibilityFilter
 	}
 }
