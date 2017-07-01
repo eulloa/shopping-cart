@@ -10,11 +10,15 @@ describe('shoppingCart reducer', () => {
 	})
 
 	it('should handle ADD_TO_CART', () => {
+		let cartItem = {
+			name: 'My awesome product'
+		}
+
 		expect(shoppingCart([], {
 			type: actionTypes.ADD_TO_CART,
-			productID: 1
+			cartItem
 		})).toEqual([
-			{ productID: 1 }
+			{ name: 'My awesome product' }
 		])
 	})
 

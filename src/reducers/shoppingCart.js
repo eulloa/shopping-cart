@@ -7,7 +7,7 @@ const shoppingCart = (state = {}, action) => {
 		case ADD_TO_CART:
 			return [ 
 				...state, 
-				{ productID: action.productID } 
+				action.cartItem
 			]
 
 		case REMOVE_FROM_CART:

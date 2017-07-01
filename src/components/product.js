@@ -15,7 +15,7 @@ class Product extends React.Component {
 		return (
 			<div>
 				<h1>{this.props.product.name}</h1>
-				<button onClick={() => this.handeClick(this.props.product.productID)}>Add to cart</button>
+				<button onClick={() => this.handeClick(this.props.product)}>Add to cart</button>
 			</div>
 		)
 	}

@@ -1,9 +1,9 @@
 import { ADD_TO_CART, REMOVE_FROM_CART, SET_CATEGORY_FILTER } from './actionTypes';
 
-export const addToCart = (productID) => {
+export const addToCart = (cartItem) => {
 	return {
 		type: ADD_TO_CART,
-		productID
+		cartItem
 	}
 }
 

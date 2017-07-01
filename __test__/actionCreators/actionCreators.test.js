@@ -12,13 +12,15 @@ const defaultState = {
 
 describe('addToCart action creator', () => {
 	it('should create an action to add a cart item', () => {
-		const productID = 1
+		const cartItem = {
+			name: 'My awesome product'
+		}
 		const expectedAction = {
 			type: actionTypes.ADD_TO_CART,
-			productID
+			cartItem
 		}
 
-		expect(actions.addToCart(1)).toEqual(expectedAction)
+		expect(actions.addToCart(cartItem)).toEqual(expectedAction)
 	})
 })
 
