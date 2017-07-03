@@ -10,7 +10,8 @@ const allProducts = [
 			'Feature 3'
 		],
 		rating: 4,
-		category: 'TECHNOLOGY'
+		category: 'TECHNOLOGY',
+		featured: true
 	},
 	{
 		productID: 2,
@@ -23,7 +24,8 @@ const allProducts = [
 			'Feature 3'
 		],
 		rating: 4,
-		category: 'BOOKS'
+		category: 'BOOKS',
+		featured: false
 	},
 	{
 		productID: 3,
@@ -36,7 +38,8 @@ const allProducts = [
 			'Feature 3'
 		],
 		rating: 4,
-		category: 'MUSIC'
+		category: 'MUSIC',
+		featured: true
 	},
 	{
 		productID: 4,
@@ -49,7 +52,8 @@ const allProducts = [
 			'Feature 3'
 		],
 		rating: 4,
-		category: 'KITCHEN'
+		category: 'KITCHEN',
+		featured: true
 	}
 ]
 

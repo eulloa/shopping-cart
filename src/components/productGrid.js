@@ -1,6 +1,7 @@
 import React from 'react';
 import Product from './product';
 import { CategoryFilters } from '../actions/actionTypes';
+import PropTypes from 'prop-types';
 
 const ProductGrid = (props) => {
 	let products = props.visibilityFilter === CategoryFilters.ALL ? props.allProducts :
@@ -13,6 +14,10 @@ const ProductGrid = (props) => {
 			})}
 		</div>
 	)
+}
+
+ProductGrid.propTypes = {
+	
 }
 
 export default ProductGrid;

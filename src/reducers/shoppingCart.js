@@ -1,6 +1,6 @@
 import { ADD_TO_CART, REMOVE_FROM_CART } from '../actions/actionTypes';
 
-const shoppingCart = (state = {}, action) => {
+const shoppingCart = (state = [], action) => {
 	const i = action.index;
 
 	switch (action.type) {

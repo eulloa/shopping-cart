@@ -168,7 +168,11 @@ header {
   display: -webkit-flex;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border: 1px solid #ccc; }
 
 .productGrid div {
   width: 50%; }
+
+.carousel {
+  border: 1px solid #ccc; }
