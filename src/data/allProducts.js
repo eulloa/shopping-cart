@@ -11,7 +11,8 @@ const allProducts = [
 		],
 		rating: 4,
 		category: 'TECHNOLOGY',
-		featured: true
+		featured: true,
+		imgSrc: 'macbookpro.jpg'
 	},
 	{
 		productID: 2,
@@ -25,7 +26,9 @@ const allProducts = [
 		],
 		rating: 4,
 		category: 'BOOKS',
-		featured: false
+		featured: false,
+		imgSrc: 'harry-potter-and-the-prisoner-of-azkaban.jpg'
+
 	},
 	{
 		productID: 3,
@@ -39,7 +42,8 @@ const allProducts = [
 		],
 		rating: 4,
 		category: 'MUSIC',
-		featured: true
+		featured: true,
+		imgSrc: 'meet-the-beatles.jpg'
 	},
 	{
 		productID: 4,
@@ -53,7 +57,8 @@ const allProducts = [
 		],
 		rating: 4,
 		category: 'KITCHEN',
-		featured: true
+		featured: true,
+		imgSrc: '/microwave.jpg'
 	}
 ]
 

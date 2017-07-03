@@ -15,7 +15,7 @@ const Header = (props) => {
 					<option value="technology">technology</option>
 				</select>
 			</form>
-			<h2><Link to="/cart">cart</Link></h2>
+			<Link to="/cart"><h2><span>{props.shoppingCart.length}</span></h2></Link>
 		</header>
 	)
 }
