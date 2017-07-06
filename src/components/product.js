@@ -8,7 +8,8 @@ class Product extends React.Component {
 	}
 
 	handeClick = (productID) => {
-		this.props.addToCart(productID)
+		this.props.addToCart(productID);
+		this.props.setModalVisibility(true);
 	}
 
 	render() {
@@ -19,9 +20,10 @@ class Product extends React.Component {
 					<figcaption>
 						<h1>{this.props.product.name}</h1>
 						<h2><sup>$</sup>{this.props.product.price}</h2>
+						<h3>{this.props.product.description}</h3>
 						<ul>
 							{this.props.product.features.map((feature, i) => {
-								return <li>{feature}</li>
+								return <li key={i}>{feature}</li>
 							})}
 						</ul>
 						<button className="button" onClick={() => this.handeClick(this.props.product)}>Add to cart</button>

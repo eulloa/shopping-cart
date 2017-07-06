@@ -6,6 +6,7 @@ const middlewares = []
 const mockStore = configureStore(middlewares)
 const defaultState = {
 	allProducts: [],
+	isModalVisible: false,
 	shoppingCart: [],
 	visibilityFilter: actionTypes.CategoryFilters.ALL
 }
@@ -44,6 +45,18 @@ describe('setCategoryFilter action creator', () => {
 	const expectedAction = { type: actionTypes.SET_CATEGORY_FILTER, filter: actionTypes.CategoryFilters.KITCHEN }
 
 	it('should create an action to update cateogry filter', () => {
+		expect(storeActions).toEqual([expectedAction])
+	})
+})
+
+describe('setModalVisibility action creator', () => {
+	const store = mockStore(defaultState)
+	store.dispatch(actions.setModalVisibility(true))
+
+	const storeActions = store.getActions()
+	const expectedAction = { type: actionTypes.SET_MODAL_VISIBILITY, isVisible: true }
+
+	it('should create an action to show modal', () => {
 		expect(storeActions).toEqual([expectedAction])
 	})
 })

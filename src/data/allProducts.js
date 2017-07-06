@@ -3,11 +3,13 @@ const allProducts = [
 		productID: 1,
 		name: 'MacBook Pro',
 		price: 19.99,
-		description: 'The best damn product ever!',
+		description: 'It’s razor thin, feather light, and even faster and more powerful than before. It has the brightest, most colorful Mac notebook display ever. And it features the Touch Bar — a Multi-Touch enabled strip of glass built into the keyboard for instant access to the tools you want, right when you want them. MacBook Pro is built on groundbreaking ideas. And it’s ready for yours.',
 		features: [
 			'Feature 1',
 			'Feature 2',
-			'Feature 3'
+			'Feature 3',
+			'Remarkable new features!',
+			'This thing is so dope!'
 		],
 		rating: 4,
 		category: 'TECHNOLOGY',

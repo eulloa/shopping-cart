@@ -7,6 +7,9 @@ import ProductGrid from './productGrid';
 import Carousel from './carousel';
 import Cart from './cart';
 import NotFound from './notFound';
+import Portal from 'react-portal';
+import PseudoModal from './pseudoModal';
+import Footer from './footer';
 
 class Main extends React.Component {
 	constructor(props) {
@@ -25,6 +28,10 @@ class Main extends React.Component {
 					<Route exact path="/cart" component={() => <Cart {...this.props} />}/>
 					<Route component={NotFound} />
 				</Switch>
+				<Portal	closeOnEsc closeOnOutsideClick isOpened={this.props.isModalVisible}>
+					<PseudoModal />
+				</Portal>
+				<Footer />
 			</main>
 		)
 	}

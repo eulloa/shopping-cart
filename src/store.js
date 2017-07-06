@@ -8,6 +8,7 @@ import allProducts from './data/allProducts';
 
 const defaultState = {
 	allProducts,
+	isModalVisible: false,
 	shoppingCart: [],
 	visibilityFilter: CategoryFilters.ALL,
 }
