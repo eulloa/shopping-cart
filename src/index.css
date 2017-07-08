@@ -160,9 +160,7 @@ a, button, input[type=submit], .btn {
   font-weight: bold; }
 
 .button:hover {
-  -webkit-box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.75); }
+  background-color: #fedd69; }
 
 .product h1 {
   font-weight: bold;
@@ -250,9 +248,22 @@ header {
   height: 400px; }
 
 .portal {
-  /*position: absolute;
-	top: 50%;
-	right: -100%;*/ }
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 10px 4px #cccccc;
+  -moz-box-shadow: 0px 1px 10px 4px #cccccc;
+  box-shadow: 0px 1px 10px 4px #cccccc; }
+  .portal section:nth-of-type(1) {
+    background-color: green;
+    height: 2em;
+    position: relative; }
+    .portal section:nth-of-type(1) button {
+      height: 2em;
+      position: absolute;
+      right: .75em;
+      color: #fff; }
+  .portal section:nth-of-type(2) {
+    padding: .75em; }
 
 footer {
   background-color: #232f3e;

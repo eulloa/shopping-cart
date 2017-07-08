@@ -42,7 +42,7 @@ const allProducts = [
 			'Feature 2',
 			'Feature 3'
 		],
-		rating: 4,
+		rating: 5,
 		category: 'MUSIC',
 		featured: true,
 		imgSrc: 'meet-the-beatles.jpg'
@@ -57,7 +57,7 @@ const allProducts = [
 			'Feature 2',
 			'Feature 3'
 		],
-		rating: 4,
+		rating: 2,
 		category: 'KITCHEN',
 		featured: true,
 		imgSrc: '/microwave.jpg'

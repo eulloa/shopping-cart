@@ -12,7 +12,7 @@ const CartItem = (props) => {
 	return (
 		<div>
 			<h1>{props.item.name}</h1>
-			<button onClick={() => props.removeFromCart(props.index)}>Remove</button>
+			<button onClick={() => { props.removeFromCart(props.index); props.setModalVisibility(false) }}>Remove</button>
 		</div>
 	)
 }

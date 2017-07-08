@@ -21,7 +21,7 @@ const CarouselProduct = (props) => {
 	return (
 		<div>
 			<h1>{props.product.name}</h1>
-			<button onClick={() => props.addToCart(props.product)}>Add to cart</button>
+			<button onClick={() => { props.addToCart(props.product); props.setModalVisibility(true) }}>Add to cart</button>
 		</div>
 	)
 }
