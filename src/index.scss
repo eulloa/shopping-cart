@@ -99,6 +99,13 @@ $small: .85em;
 		margin-bottom: 1em;
 	}
 
+	h4 {
+		position: absolute;
+		font-size: $small;
+		right: 0;
+		top: 0;
+	}
+
 	li {
 		list-style: disc;
 		margin-bottom: .25em;
@@ -169,6 +176,7 @@ header {
 .productGrid div  {
 	border-bottom: 1px solid $gray;
 	margin-bottom: 1.25em;
+	position: relative;
 }
 
 .productGrid div:last-child {

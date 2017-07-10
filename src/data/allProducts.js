@@ -13,7 +13,7 @@ const allProducts = [
 		],
 		rating: 4,
 		category: 'TECHNOLOGY',
-		featured: true,
+		featured: false,
 		imgSrc: 'macbookpro.jpg'
 	},
 	{

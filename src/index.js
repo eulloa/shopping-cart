@@ -11,6 +11,8 @@ import store from './store';
 
 //css
 import './index.css';
+import './slick.css';
+import './slick-theme.css';
 
 const router = (
 	<Provider store={store}>

@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './header';
 import ProductGrid from './productGrid';
 import Carousel from './carousel';
+import SlickSlider from './slickSlider';
 import Cart from './cart';
 import NotFound from './notFound';
 import Portal from 'react-portal';
@@ -27,7 +28,7 @@ class Main extends React.Component {
 		return (
 			<main>
 				<Header onChange={this.handleOnChange} {...this.props} />
-				<Carousel carouselProducts={this.props.allProducts} {...this.props} />
+				<SlickSlider carouselProducts={this.props.allProducts} {...this.props} />
 				<Switch>
 					<Route exact path="/" component={() => <ProductGrid {...this.props} />}/>
 					<Route exact path="/cart" component={() => <Cart {...this.props} />}/>

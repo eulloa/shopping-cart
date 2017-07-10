@@ -3,6 +3,7 @@ import React from 'react';
 const Product = (props) => {
 	return (
 		<div className="product">
+			<h4>{props.product.category}</h4>
 			<figure>
 				<img src={'/img/' + props.product.imgSrc} alt={props.product.description}/>
 				<figcaption>
