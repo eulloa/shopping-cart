@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const ProductSingleView = (props) => {
 	let product = props.allProducts.find((p) => p.productID === parseInt(props.match.params.productID, 10))
 
-	if (typeof product === undefined) {
+	if (product == null) {
 		product = props.allProducts.find((p) => p.productID === 1)
 	}
 
