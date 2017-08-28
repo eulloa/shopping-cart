@@ -4,8 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 //components
 import Header from './header';
 import ProductGrid from './productGrid';
-import Carousel from './carousel';
-import SlickSlider from './slickSlider';
+import ProductSingleView from './productSingleView';
 import Cart from './cart';
 import NotFound from './notFound';
 import Portal from 'react-portal';
@@ -16,22 +15,16 @@ import Footer from './footer';
 class Main extends React.Component {
 	constructor(props) {
 		super(props);
-
-		this.handleOnChange = this.handleOnChange.bind(this);
-	}
-
-	handleOnChange = (e) => {
-		this.props.setCategoryFilter(e.target.value.toUpperCase())
 	}
 
 	render() {
 		return (
 			<main>
-				<Header onChange={this.handleOnChange} {...this.props} />
-				<SlickSlider carouselProducts={this.props.allProducts} {...this.props} />
+				<Header {...this.props} />
 				<Switch>
 					<Route exact path="/" component={() => <ProductGrid {...this.props} />}/>
 					<Route exact path="/cart" component={() => <Cart {...this.props} />}/>
+					<Route path="/product/:productID" render={({match}) => <ProductSingleView {...this.props} match={match} />} />
 					<Route component={NotFound} />
 				</Switch>
 				<Portal	isOpened={this.props.isModalVisible}>

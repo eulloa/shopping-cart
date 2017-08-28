@@ -1,12 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-class SlickSlider extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
+const SlickSlider = (props) => {
 		let settings = {
 			dots: true,
 			infinite: true,
@@ -15,7 +10,7 @@ class SlickSlider extends React.Component {
       		slidesToScroll: 1
 		}
 
-		let products = this.props.carouselProducts.filter((p) => p.featured === true)
+		let products = props.carouselProducts.filter((p) => p.featured === true)
 
 		return (
 			<Slider {...settings}>
@@ -29,7 +24,6 @@ class SlickSlider extends React.Component {
 				})}
 			</Slider>
 		)
-	}
 }
 
 export default SlickSlider

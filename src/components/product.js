@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Product = (props) => {
 	return (
@@ -10,12 +11,8 @@ const Product = (props) => {
 					<h1>{props.product.name}</h1>
 					<h2><sup>$</sup>{props.product.price}</h2>
 					<h3>{props.product.description}</h3>
-					<ul>
-						{props.product.features.map((feature, i) => {
-							return <li key={i}>{feature}</li>
-						})}
-					</ul>
 					<button className="button" onClick={() => { props.addToCart(props.product); props.setModalVisibility(true) }}>Add to cart</button>
+					<Link className="button margin" to={'/product/' + props.product.productID}>Learn more</Link>
 				</figcaption>
 			</figure>
 		</div>

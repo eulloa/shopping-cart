@@ -79,8 +79,13 @@ $small: .85em;
 	font-weight: bold;
 }
 
+.button.margin {
+	margin-left: 1em;
+}
+
 .button:hover {
-	background-color: $yellow-hover;
+	background-color: $navy;
+	color: $white;
 }
 
 .product {
@@ -113,6 +118,20 @@ $small: .85em;
 
 	li:last-child {
 		margin-bottom: 0;
+	}
+}
+
+.product.single-view {
+	padding: 1.25em;
+	position: relative;
+
+	h4 {
+		right: 1.25em;
+		top: 1.25em;
+	}
+
+	ul {
+		margin-left: 1em;
 	}
 }
 

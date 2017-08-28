@@ -159,8 +159,12 @@ a, button, input[type=submit], .btn {
   margin-top: 1em;
   font-weight: bold; }
 
+.button.margin {
+  margin-left: 1em; }
+
 .button:hover {
-  background-color: #fedd69; }
+  background-color: #232f3e;
+  color: #fff; }
 
 .product h1 {
   font-weight: bold;
@@ -186,6 +190,15 @@ a, button, input[type=submit], .btn {
 
 .product li:last-child {
   margin-bottom: 0; }
+
+.product.single-view {
+  padding: 1.25em;
+  position: relative; }
+  .product.single-view h4 {
+    right: 1.25em;
+    top: 1.25em; }
+  .product.single-view ul {
+    margin-left: 1em; }
 
 /* ==========================================================================
    user defined styles
