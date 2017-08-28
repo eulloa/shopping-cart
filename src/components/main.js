@@ -9,7 +9,6 @@ import ShoppingCart from './shoppingCart';
 import NotFound from './notFound';
 import Portal from 'react-portal';
 import PseudoModal from './pseudoModal';
-import PseudoModalConnect from './pseudoModalConnect';
 import Footer from './footer';
 
 class Main extends React.Component {
@@ -28,9 +27,7 @@ class Main extends React.Component {
 					<Route component={NotFound} />
 				</Switch>
 				<Portal	isOpened={this.props.isModalVisible}>
-					<PseudoModalConnect>
-						<PseudoModal />
-					</PseudoModalConnect>
+					<PseudoModal />
 				</Portal>
 				<Footer />
 			</main>

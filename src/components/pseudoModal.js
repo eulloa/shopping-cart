@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import * as actionCreators from '../actions/actions';
+
 import { Animate } from 'react-move';
 
 class PseudoModal extends React.Component {
@@ -54,4 +58,8 @@ PseudoModal.PropTypes = {
 	message: PropTypes.string.isRequired
 }
 
-export default PseudoModal
+const mapDispatchToProps = (dispatch) => {
+	return bindActionCreators(actionCreators, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(PseudoModal);
