@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const ProductSingleView = (props) => {
 	let product = props.allProducts.find((p) => p.productID === parseInt(props.match.params.productID, 10))
@@ -23,6 +24,7 @@ const ProductSingleView = (props) => {
 						})}
 					</ul>
 					<button className="button" onClick={() => { props.addToCart(product); props.setModalVisibility(true) }}>Add to cart</button>
+					<Link to='/'>View All</Link>
 				</figcaption>
 			</figure>
 		</div>

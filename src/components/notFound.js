@@ -1,8 +1,8 @@
 import React from 'react';
 
-const NotFound = () => {
+const NotFound = (props) => {
 	return (
-		<div>404</div>
+		<div>Oops! Your search for "{props.location.pathname}" could not be found, please try again!</div>
 	)
 }
 

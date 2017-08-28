@@ -5,7 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './header';
 import ProductGrid from './productGrid';
 import ProductSingleView from './productSingleView';
-import Cart from './cart';
+import ShoppingCart from './shoppingCart';
 import NotFound from './notFound';
 import Portal from 'react-portal';
 import PseudoModal from './pseudoModal';
@@ -23,7 +23,7 @@ class Main extends React.Component {
 				<Header {...this.props} />
 				<Switch>
 					<Route exact path="/" component={() => <ProductGrid {...this.props} />}/>
-					<Route exact path="/cart" component={() => <Cart {...this.props} />}/>
+					<Route exact path="/cart" component={() => <ShoppingCart {...this.props} />}/>
 					<Route path="/product/:productID" render={({match}) => <ProductSingleView {...this.props} match={match} />} />
 					<Route component={NotFound} />
 				</Switch>

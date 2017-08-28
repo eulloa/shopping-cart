@@ -199,6 +199,10 @@ a, button, input[type=submit], .btn {
     top: 1.25em; }
   .product.single-view ul {
     margin-left: 1em; }
+  .product.single-view a {
+    position: absolute;
+    right: 1.25em;
+    bottom: 1.25em; }
 
 /* ==========================================================================
    user defined styles

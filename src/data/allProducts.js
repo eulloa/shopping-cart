@@ -60,7 +60,7 @@ const allProducts = [
 		rating: 2,
 		category: 'KITCHEN',
 		featured: true,
-		imgSrc: '/microwave.jpg'
+		imgSrc: 'microwave.jpg'
 	}
 ]
 
