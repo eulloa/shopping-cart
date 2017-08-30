@@ -118,7 +118,7 @@ $small: .85em;
 
 	li {
 		list-style: disc;
-		margin-bottom: .25em;
+		margin-bottom: .75em;
 	}
 
 	li:last-child {
@@ -166,6 +166,13 @@ $small: .85em;
 			width: 75px;
 			height: 75px;
 			margin-bottom: .5em;
+		}
+
+		img.active {
+			border: 1px solid $grayDark;
+			-webkit-box-shadow: 0px 1px 10px 4px rgba(204,204,204,1);
+			-moz-box-shadow: 0px 1px 10px 4px rgba(204,204,204,1);
+			box-shadow: 0px 1px 10px 4px rgba(204,204,204,1);
 		}
 
 		li:last-child img {

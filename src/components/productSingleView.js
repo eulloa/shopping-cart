@@ -11,6 +11,7 @@ class ProductSingleView extends React.Component {
 
 		this.updateImage = this.updateImage.bind(this);
 		this.getProduct = this.getProduct.bind(this);
+		this.highlightActive = this.highlightActive.bind(this);
 	}
 
 	updateImage = (img) => {
@@ -29,6 +30,17 @@ class ProductSingleView extends React.Component {
 		return product;
 	}
 
+	highlightActive = (index) => {
+		var listItems = document.getElementsByClassName('images')[0].childNodes;
+		listItems.forEach((li, i) => {
+			li.childNodes[0].classList.remove('active')
+
+			if (index === i) {
+				li.childNodes[0].classList.add('active')
+			}
+		})
+	}
+
 	componentWillMount() {
 		this.setState({
 			currentImg: this.getProduct().images[0]
@@ -44,7 +56,11 @@ class ProductSingleView extends React.Component {
 					<ul className="images child">
 						{
 							product.images.map((img, i) => {
-								return <li key={i}><img onMouseOver={() => { this.updateImage(img) }} src={'/img/' + img} alt={product.description} /></li>
+								return (
+									<li key={i}>
+										<img className={i === 0 ? 'active' : ''} onMouseOver={() => { this.updateImage(img); this.highlightActive(i); }} src={'/img/' + img} alt={product.description} />
+									</li>
+								)
 							})
 						}
 					</ul>
@@ -52,7 +68,7 @@ class ProductSingleView extends React.Component {
 				<section className="child">
 					<h4>{product.category}</h4>
 					<figure>
-						<img src={'/img/' + this.state.currentImg} />
+						<img src={'/img/' + this.state.currentImg} alt={product.description} />
 					</figure>
 					<div>
 						<h1>{product.name}</h1>
