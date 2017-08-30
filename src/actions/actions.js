@@ -1,4 +1,9 @@
-import { ADD_TO_CART, REMOVE_FROM_CART, SET_CATEGORY_FILTER, SET_MODAL_VISIBILITY } from './actionTypes';
+import { ADD_TO_CART, 
+	REMOVE_FROM_CART, 
+	SET_CATEGORY_FILTER, 
+	SET_MODAL_VISIBILITY,
+	UPDATE_CART_MESSAGE
+} from './actionTypes';
 
 export const addToCart = (cartItem) => {
 	return {
@@ -25,5 +30,12 @@ export const setModalVisibility = (bool) => {
 	return {
 		type: SET_MODAL_VISIBILITY,
 		isVisible: bool
+	}
+}
+
+export const updateCartMessage = (message) => {
+	return {
+		type: UPDATE_CART_MESSAGE,
+		message
 	}
 }

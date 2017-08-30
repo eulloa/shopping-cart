@@ -60,6 +60,7 @@ $orange: #e67a00;
 $navy: #232f3e;
 $yellow: #febd69;
 $yellow-hover: #fedd69;
+$red: red;
 $green: green;
 
 /* font sizes */
@@ -240,6 +241,10 @@ header {
     	background-color: $green;
 		height: 2em;
 		position: relative;
+
+		&.remove {
+			background-color: $red;
+		}
 
 		button {
 			height: 2em;

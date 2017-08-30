@@ -8,6 +8,7 @@ import allProducts from './data/allProducts';
 
 const defaultState = {
 	allProducts,
+	cartMessage: 'Added to cart!',
 	isModalVisible: false,
 	shoppingCart: [],
 	visibilityFilter: CategoryFilters.ALL,

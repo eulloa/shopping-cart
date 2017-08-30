@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -37,7 +36,7 @@ class PseudoModal extends React.Component {
 			<Animate default={{right: 0}} data={this.state.data} duration={500}>
 				{data => (
 					<div className="portal" style={{right: data.right, top: (this.getWindowTop() + 10) }}>
-						<section>
+						<section className={this.props.message.indexOf('Removed') != -1 ? 'remove' : ''}>
 							<button onClick={() => { this.props.closePortal; this.props.setModalVisibility(false) }}>X</button>
 						</section>
 						<section>
@@ -50,16 +49,14 @@ class PseudoModal extends React.Component {
 	}
 }
 
-PseudoModal.defaultProps = {
-	message: 'Added to cart!'
-}
-
-PseudoModal.PropTypes = {
-	message: PropTypes.string.isRequired
+const mapStateToProps = (state) => {
+	return {
+		message: state.cartMessage
+	}
 }
 
 const mapDispatchToProps = (dispatch) => {
 	return bindActionCreators(actionCreators, dispatch);
 }
 
-export default connect(null, mapDispatchToProps)(PseudoModal);
+export default connect(mapStateToProps, mapDispatchToProps)(PseudoModal);
