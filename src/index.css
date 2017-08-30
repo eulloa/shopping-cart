@@ -156,11 +156,8 @@ a, button, input[type=submit], .btn {
 .button {
   background-color: #febd69;
   padding: .5em 1em;
-  margin-top: 1em;
+  margin: 1em 1em 0 0;
   font-weight: bold; }
-
-.button.margin {
-  margin-left: 1em; }
 
 .button:hover {
   background-color: #232f3e;
@@ -200,15 +197,22 @@ a, button, input[type=submit], .btn {
 .product.single-view {
   padding: 1.25em; }
   .product.single-view .child:last-child {
-    width: 100%; }
+    width: 100%;
+    flex: 8.5; }
   .product.single-view .child:not(:last-child) {
     flex: 1; }
-  .product.single-view figure.child {
+  .product.single-view .child {
     position: relative; }
+    .product.single-view .child figure {
+      max-width: 250px;
+      float: right;
+      margin-left: 1em; }
+      .product.single-view .child figure img {
+        width: 100%; }
   .product.single-view ul.images.child {
     margin-left: 0;
-    width: 15%;
-    text-align: center; }
+    flex: 1;
+    text-align: left; }
     .product.single-view ul.images.child li {
       list-style-type: none; }
     .product.single-view ul.images.child img {
@@ -222,12 +226,13 @@ a, button, input[type=submit], .btn {
     .product.single-view ul li {
       list-style-type: disc; }
   .product.single-view h4 {
-    right: 1.25em;
-    top: 1.25em; }
-  .product.single-view a {
+    font-size: 0.85em;
+    font-style: italic;
+    position: static; }
+  .product.single-view a.back {
     position: absolute;
-    right: 1.25em;
-    bottom: 1.25em; }
+    right: 0;
+    bottom: 0; }
 
 /* ==========================================================================
    user defined styles
@@ -238,7 +243,8 @@ body {
 
 main {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #333; }
 
 header {
   position: relative;
