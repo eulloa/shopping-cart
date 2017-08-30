@@ -18,7 +18,7 @@ const SlickSlider = (props) => {
 					return (
 						<div key={i}>
 							<h1>{product.name}</h1>
-							<img src={'/img/' + product.imgSrc} alt={product.description} />
+							<img src={'/img/' + product.images[0]} alt={product.description} />
 						</div>
 					)
 				})}

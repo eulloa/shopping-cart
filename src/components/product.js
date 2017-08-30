@@ -6,7 +6,7 @@ const Product = (props) => {
 		<div className="product">
 			<h4>{props.product.category}</h4>
 			<figure>
-				<img src={'/img/' + props.product.imgSrc} alt={props.product.description}/>
+				<img src={'/img/' + props.product.images[0]} alt={props.product.description}/>
 				<figcaption>
 					<h1>{props.product.name}</h1>
 					<h2><sup>$</sup>{props.product.price}</h2>

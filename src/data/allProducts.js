@@ -14,7 +14,10 @@ const allProducts = [
 		rating: 4,
 		category: 'TECHNOLOGY',
 		featured: false,
-		imgSrc: 'macbookpro.jpg'
+		images: [
+			'macbookpro.jpg',
+			'harry-potter-and-the-prisoner-of-azkaban.jpg'
+		]
 	},
 	{
 		productID: 2,
@@ -29,8 +32,9 @@ const allProducts = [
 		rating: 4,
 		category: 'BOOKS',
 		featured: false,
-		imgSrc: 'harry-potter-and-the-prisoner-of-azkaban.jpg'
-
+		images: [
+			'harry-potter-and-the-prisoner-of-azkaban.jpg'
+		]
 	},
 	{
 		productID: 3,
@@ -45,7 +49,9 @@ const allProducts = [
 		rating: 5,
 		category: 'MUSIC',
 		featured: true,
-		imgSrc: 'meet-the-beatles.jpg'
+		images: [
+			'meet-the-beatles.jpg'
+		]
 	},
 	{
 		productID: 4,
@@ -60,7 +66,9 @@ const allProducts = [
 		rating: 2,
 		category: 'KITCHEN',
 		featured: true,
-		imgSrc: 'microwave.jpg'
+		images: [
+			'microwave.jpg'
+		]
 	}
 ]
 

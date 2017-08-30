@@ -10,9 +10,18 @@ const ProductSingleView = (props) => {
 
 	return (
 		<div className="product single-view">
-			<h4>{product.category}</h4>
-			<figure>
-				<img src={'/img/' + product.imgSrc} alt={product.description}/>
+			{ product.images.length > 1 &&
+				<ul className="images child">
+					{
+						product.images.map((img, i) => {
+							return <li key={i}><img src={'/img/' + img} alt={product.description} /></li>
+						})
+					}
+				</ul>
+			}
+			<figure className="child">
+				<h4>{product.category}</h4>
+				<img src={'/img/' + product.images[0]} alt={product.description}/>
 				<figcaption>
 					<h1>{product.name}</h1>
 					<h2><sup>$</sup>{product.price}</h2>

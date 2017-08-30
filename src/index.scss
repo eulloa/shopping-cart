@@ -89,6 +89,13 @@ $small: .85em;
 	color: $white;
 }
 
+.flexbox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
 .product {
 	h1 {
 		font-weight: bold;
@@ -124,15 +131,51 @@ $small: .85em;
 
 .product.single-view {
 	padding: 1.25em;
-	position: relative;
+	@extend .flexbox;
 
-	h4 {
-		right: 1.25em;
-		top: 1.25em;
+	.child:last-child {
+		width: 100%;
+	}
+
+	.child:not(:last-child) {
+		flex: 1;
+	}
+
+	figure.child {
+		position: relative;
+	}
+
+	ul.images.child {
+		margin-left: 0;
+		width: 15%;
+		text-align: center;
+
+		li {
+			list-style-type: none;
+		}
+
+		img {
+			width: 75px;
+			height: 75px;
+			margin-bottom: .5em;
+		}
+
+		li:last-child img {
+			margin-bottom: .5em;
+		}
 	}
 
 	ul {
 		margin-left: 1em;
+
+		li {
+			list-style-type: disc;
+		}
+	}
+
+	h4 {
+		right: 1.25em;
+		top: 1.25em;
 	}
 
 	a {

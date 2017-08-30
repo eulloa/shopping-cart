@@ -166,6 +166,12 @@ a, button, input[type=submit], .btn {
   background-color: #232f3e;
   color: #fff; }
 
+.flexbox, .product.single-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
 .product h1 {
   font-weight: bold;
   margin-bottom: .5em;
@@ -192,13 +198,32 @@ a, button, input[type=submit], .btn {
   margin-bottom: 0; }
 
 .product.single-view {
-  padding: 1.25em;
-  position: relative; }
+  padding: 1.25em; }
+  .product.single-view .child:last-child {
+    width: 100%; }
+  .product.single-view .child:not(:last-child) {
+    flex: 1; }
+  .product.single-view figure.child {
+    position: relative; }
+  .product.single-view ul.images.child {
+    margin-left: 0;
+    width: 15%;
+    text-align: center; }
+    .product.single-view ul.images.child li {
+      list-style-type: none; }
+    .product.single-view ul.images.child img {
+      width: 75px;
+      height: 75px;
+      margin-bottom: .5em; }
+    .product.single-view ul.images.child li:last-child img {
+      margin-bottom: .5em; }
+  .product.single-view ul {
+    margin-left: 1em; }
+    .product.single-view ul li {
+      list-style-type: disc; }
   .product.single-view h4 {
     right: 1.25em;
     top: 1.25em; }
-  .product.single-view ul {
-    margin-left: 1em; }
   .product.single-view a {
     position: absolute;
     right: 1.25em;

@@ -28,7 +28,7 @@ class PseudoModal extends React.Component {
 		setTimeout(() => {
 			this.props.closePortal();
 			this.props.setModalVisibility(false);
-		}, 1500)
+		}, 2500)
 	}
 
 	render() {
@@ -36,8 +36,8 @@ class PseudoModal extends React.Component {
 			<Animate default={{right: 0}} data={this.state.data} duration={500}>
 				{data => (
 					<div className="portal" style={{right: data.right, top: (this.getWindowTop() + 10) }}>
-						<section className={this.props.message.indexOf('Removed') != -1 ? 'remove' : ''}>
-							<button onClick={() => { this.props.closePortal; this.props.setModalVisibility(false) }}>X</button>
+						<section className={this.props.message.indexOf('Removed') !== -1 ? 'remove' : ''}>
+							<button onClick={() => { this.props.closePortal(); this.props.setModalVisibility(false); }}>X</button>
 						</section>
 						<section>
 							<h1>{this.props.message}</h1>

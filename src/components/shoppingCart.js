@@ -17,7 +17,7 @@ const ShoppingCartItem = (props) => {
 	return (
 		<div className="shoppingCartItem">
 			<h1>{props.item.name}</h1>
-			<img src={'/img/' + props.item.imgSrc} alt={props.item.description} />
+			<img src={'/img/' + props.item.images[0]} alt={props.item.description} />
 			<button className="button" onClick={() => { props.removeFromCart(props.index); props.setModalVisibility(true); props.updateCartMessage('Removed from Cart!') }}>Remove</button>
 		</div>
 	)
