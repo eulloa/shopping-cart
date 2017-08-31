@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const ShoppingCart = (props) => {
 	if (!props.shoppingCart.length) {
-		return <div className="shoppingCart">There is nothing in your cart yet, click <Link to="/">here</Link> to start shopping!</div>
+		return <div className="shoppingCart container">There is nothing in your cart yet, click <Link to="/">here</Link> to start shopping!</div>
 	}
 
 	return (
-		<div className="shoppingCart">
+		<div className="shoppingCart container">
 			{props.shoppingCart.map((item, i) => <ShoppingCartItem key={i} index={i} item={item} {...props} />)}
 		</div>
 	)

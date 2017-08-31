@@ -8,7 +8,7 @@ const ProductGrid = (props) => {
 		props.allProducts.filter(p => { return p.category === props.visibilityFilter })
 
 	return (
-		<div>
+		<div className="container">
 			<SlickSlider carouselProducts={props.allProducts} />
 			<div className="productGrid">
 				{products.map((product, i) => {

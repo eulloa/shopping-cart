@@ -93,6 +93,11 @@ $small: .85em;
 	display: flex;
 }
 
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
 .product {
 	h1 {
 		font-weight: bold;
@@ -102,7 +107,8 @@ $small: .85em;
 
 	h2 {
 		margin-bottom: .5em;
-		font-size: $medium;
+		font-size: $small;
+		font-style: italic;
 	}
 
 	h3 {
@@ -112,8 +118,9 @@ $small: .85em;
 	h4 {
 		position: absolute;
 		font-size: $small;
-		right: 0;
-		top: 0;
+		right: 1em;
+		top: 1em;
+		font-style: italic;
 	}
 
 	li {
@@ -128,6 +135,10 @@ $small: .85em;
 
 .product.single-view {
 	padding: 1.25em;
+	margin: 1.25em auto;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+	border-radius: 4px;
+	background-color: $white;
 	@extend .flexbox;
 
 	.child:last-child {
@@ -160,11 +171,11 @@ $small: .85em;
 
 		li {
 			list-style-type: none;
+			max-width: 75px;
 		}
 
 		img {
-			width: 75px;
-			height: 75px;
+			width: 100%;
 			margin-bottom: .5em;
 		}
 
@@ -176,7 +187,7 @@ $small: .85em;
 		}
 
 		li:last-child img {
-			margin-bottom: .5em;
+			margin-bottom: 0;
 		}
 	}
 
@@ -186,6 +197,19 @@ $small: .85em;
 		li {
 			list-style-type: disc;
 		}
+	}
+
+	ul.rating {
+		margin-left: 0;
+
+		li {
+			display: inline-block;
+			list-style-type: none;
+		}
+	}
+
+	ul.features {
+		font-size: .8em;
 	}
 
 	h4 {
@@ -211,15 +235,15 @@ body {
 }
 
 main {
-	max-width: 1200px;
 	margin: 0 auto;
 	color: $grayDark;
+	background-color: $gray;
 }
 
 header {
 	position: relative;
 	text-align: center;
-	padding: 3em 1.25em;
+	padding: 2em 1.25em;
 	background-color: $navy;
 	color: $white;
 
@@ -256,17 +280,16 @@ header {
 }
 
 .productGrid {
-	padding: 1.25em 0 0 0;
+	padding-top: 1.25em;
 }
 
 .productGrid div  {
-	border-bottom: 1px solid $gray;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
 	margin-bottom: 1.25em;
 	position: relative;
-}
-
-.productGrid div:last-child {
-	border-bottom: none;
+	border-radius: 4px;
+	padding: 1em;
+	background-color: $white;
 }
 
 .productGrid figure img {
@@ -331,5 +354,13 @@ footer {
 		top: 50%;
 		transform: translateY(-50%);
 		left: 50%;
+	}
+}
+
+.shoppingCart {
+	padding: 1.25em 0;
+
+	.shoppingCartItem {
+		background-color: $white;
 	}
 }
