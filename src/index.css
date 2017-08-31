@@ -173,7 +173,7 @@ a, button, input[type=submit], .btn {
   max-width: 1400px;
   margin: 0 auto; }
 
-.transition, header nav {
+.transition, header nav, .portal section:nth-of-type(1) button {
   transition: all 300ms ease-in-out; }
 
 .product h1 {
@@ -341,9 +341,7 @@ header {
 .portal {
   position: absolute;
   background-color: #fff;
-  -webkit-box-shadow: 0px 1px 10px 4px #cccccc;
-  -moz-box-shadow: 0px 1px 10px 4px #cccccc;
-  box-shadow: 0px 1px 10px 4px #cccccc;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.7);
   z-index: 2; }
   .portal section:nth-of-type(1) {
     background-color: green;
@@ -354,10 +352,19 @@ header {
     .portal section:nth-of-type(1) button {
       height: 2em;
       position: absolute;
-      right: .75em;
-      color: #fff; }
+      right: 0;
+      color: #fff;
+      width: 2em;
+      background: url(/img/close.svg) 50% 50% no-repeat;
+      background-size: 1.35em; }
+    .portal section:nth-of-type(1) button:hover {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
   .portal section:nth-of-type(2) {
     padding: .75em; }
+    .portal section:nth-of-type(2) h1 {
+      font-size: 0.85em; }
 
 footer {
   background-color: #232f3e;
@@ -369,9 +376,11 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 50%; }
+    left: 50%;
+    font-size: 0.8em; }
 
 .shoppingCart {
   padding: 1.25em 0; }
   .shoppingCart .shoppingCartItem {
-    background-color: #fff; }
+    background-color: #fff;
+    padding: 1.25em; }

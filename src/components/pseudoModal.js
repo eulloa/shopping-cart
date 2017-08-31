@@ -37,7 +37,7 @@ class PseudoModal extends React.Component {
 				{data => (
 					<div className="portal" style={{right: data.right, top: (this.getWindowTop() + 10) }}>
 						<section className={this.props.message.indexOf('Removed') !== -1 ? 'remove' : ''}>
-							<button onClick={() => { this.props.closePortal(); this.props.setModalVisibility(false); }}>X</button>
+							<button onClick={() => { this.props.closePortal(); this.props.setModalVisibility(false); }}></button>
 						</section>
 						<section>
 							<h1>{this.props.message}</h1>
