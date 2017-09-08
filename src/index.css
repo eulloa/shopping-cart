@@ -293,8 +293,32 @@ header {
   header form {
     display: inline-block;
     width: 33%; }
-  header form select {
-    width: 100%; }
+    header form label {
+      position: relative; }
+    header form label:after {
+      content: "\25be";
+      position: absolute;
+      right: 0;
+      display: block;
+      pointer-events: none;
+      color: #fff;
+      background: #e67a00;
+      width: 2em;
+      height: 1.5em;
+      top: -.05em; }
+    header form select {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubunutu, Cantarell, Helvetica, Neue, sans-serif;
+      text-transform: uppercase;
+      width: 100%;
+      padding: .5em 2.5em .5em .5em;
+      background-color: #fff;
+      border: none;
+      border-radius: 0;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 0;
+      border: none; }
   header h2 {
     width: 35px;
     height: 35px;
