@@ -13,7 +13,6 @@ const allProducts = [
 		],
 		rating: 4.5,
 		category: 'TECHNOLOGY',
-		featured: false,
 		images: [
 			'macbookpro.jpg',
 			'macbook-id-hero.png'
@@ -26,7 +25,9 @@ const allProducts = [
 		description: 'Harry Potter and the Prisoner of Azkaban is the third novel in the Harry Potter series, written by J. K. Rowling. The book follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. Along with friends Ron Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban who they believe is one of Lord Voldemort\'s old allies. The book was published in the United Kingdom on 8 July 1999 by Bloomsbury and in the United States on 8 September 1999 by Scholastic Inc.[1][2][3][4] Rowling found the book easy to write, finishing it just a year after she had begun writing it. The book sold 68,000 copies in just three days after its release in the United Kingdom and since has sold over three million in the country.[5] The book won the 1999 Whitbread Children\'s Book Award, the Bram Stoker Award, the 2000 Locus Award for Best Fantasy Novel, and was short-listed for other awards, including the Hugo. The film adaptation of the novel was released in 2004, grossing more than $796 million and earned notable critical acclaim. Video games loosely based on Harry Potter and the Prisoner of Azkaban were also released for several platforms, and most obtained favourable reviews.',
 		rating: 4,
 		category: 'BOOKS',
-		featured: true,
+		featured: {
+			description: 'Relive the adventures of the Boy Who Lived in the 3rd book from best-selling author J.K Rowling.'
+		},
 		images: [
 			'harry-potter-and-the-prisoner-of-azkaban.jpg'
 		]
@@ -43,7 +44,9 @@ const allProducts = [
 		],
 		rating: 5,
 		category: 'MUSIC',
-		featured: true,
+		featured: {
+			description: 'It\'s 1964 all over again, Beatlemania is back!'
+		},
 		images: [
 			'meet-the-beatles.jpg'
 		]
@@ -60,7 +63,6 @@ const allProducts = [
 		],
 		rating: 2.5,
 		category: 'KITCHEN',
-		featured: false,
 		images: [
 			'microwave.jpg'
 		]

@@ -109,6 +109,24 @@
     right: 0;
     background-color: rgba(0, 0, 0, .7);
 }
+.slick-slide .product-info {
+    display: flex;
+    justify-content: center;
+}
+.slick-slide .product-info section {
+    padding-left: 2em;
+}
+.slick-slide .product-info section h1 {
+    font-size: 1.75em;
+    margin-bottom: .5em;
+    text-align: left;
+}
+.slick-slide .product-info section h2 {
+    font-size: 1em;
+    width: 70%;
+    text-align: left;
+    line-height: 1.5em;
+}
 .slick-slide img {
     /* display: block; */
     max-height: 250px;

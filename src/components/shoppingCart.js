@@ -23,6 +23,4 @@ const ShoppingCartItem = (props) => {
 	)
 }
 
-
-
 export default ShoppingCart
