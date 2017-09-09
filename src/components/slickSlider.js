@@ -13,12 +13,15 @@ const SlickSlider = (props) => {
 		let products = props.carouselProducts.filter((p) => p.featured === true)
 
 		return (
-			<Slider {...settings}>
+			<Slider {...settings} className="slider">
 				{products.map((product, i) => {
 					return (
-						<div key={i}>
-							<h1>{product.name}</h1>
-							<img src={'/img/' + product.images[0]} alt={product.description} />
+						<div key={i} className={i === 0 ? 'book': i === 1 ? 'music': ''}>
+							<div className="shadow"></div>
+							<div className="product-info">
+								<h1>{product.name}</h1>
+								<img src={'/img/' + product.images[0]} alt={product.description} />
+							</div>
 						</div>
 					)
 				})}

@@ -26,7 +26,7 @@ const allProducts = [
 		description: 'Harry Potter and the Prisoner of Azkaban is the third novel in the Harry Potter series, written by J. K. Rowling. The book follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. Along with friends Ron Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban who they believe is one of Lord Voldemort\'s old allies. The book was published in the United Kingdom on 8 July 1999 by Bloomsbury and in the United States on 8 September 1999 by Scholastic Inc.[1][2][3][4] Rowling found the book easy to write, finishing it just a year after she had begun writing it. The book sold 68,000 copies in just three days after its release in the United Kingdom and since has sold over three million in the country.[5] The book won the 1999 Whitbread Children\'s Book Award, the Bram Stoker Award, the 2000 Locus Award for Best Fantasy Novel, and was short-listed for other awards, including the Hugo. The film adaptation of the novel was released in 2004, grossing more than $796 million and earned notable critical acclaim. Video games loosely based on Harry Potter and the Prisoner of Azkaban were also released for several platforms, and most obtained favourable reviews.',
 		rating: 4,
 		category: 'BOOKS',
-		featured: false,
+		featured: true,
 		images: [
 			'harry-potter-and-the-prisoner-of-azkaban.jpg'
 		]
@@ -60,7 +60,7 @@ const allProducts = [
 		],
 		rating: 2.5,
 		category: 'KITCHEN',
-		featured: true,
+		featured: false,
 		images: [
 			'microwave.jpg'
 		]

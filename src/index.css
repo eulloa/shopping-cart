@@ -196,6 +196,16 @@ a, button, input[type=submit], .btn {
   top: 1em;
   font-style: italic; }
 
+.product h5 {
+  font-size: 0.8em;
+  right: 0;
+  top: 0;
+  background-color: #232f3e;
+  padding: .5em;
+  position: absolute;
+  color: #fff;
+  font-style: italic; }
+
 .product li {
   list-style: disc;
   margin-bottom: .75em; }
@@ -282,7 +292,7 @@ header {
     background-color: #232f3e;
     color: #fff;
     width: 100%;
-    z-index: 1; }
+    z-index: 2; }
     header nav.sticky {
       background-color: rgba(35, 47, 62, 0.9);
       top: 0;
@@ -404,7 +414,7 @@ footer {
     font-size: 0.8em; }
 
 .shoppingCart {
-  padding: 1.25em 0; }
+  padding: 1.25em 1em; }
   .shoppingCart .shoppingCartItem {
     background-color: #fff;
     padding: 1.25em; }

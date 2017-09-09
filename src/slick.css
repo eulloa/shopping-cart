@@ -74,6 +74,11 @@
     visibility: hidden;
 }
 
+.slider div {
+    position: relative;
+    color: #fff;
+}
+
 .slick-slide
 {
     display: none;
@@ -86,6 +91,23 @@
 
     padding: 1em 4em;
     text-align: center;
+    position: relative;
+}
+.slick-slide.music {
+    background: url(/img/music-slide-bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.slick-slide.book {
+    background: url(/img/book-slide-bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.slick-slide .shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
 }
 .slick-slide img {
     /* display: block; */
