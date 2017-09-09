@@ -418,8 +418,15 @@ footer {
   .shoppingCart .shoppingCartItem {
     background-color: #fff;
     padding: 1.25em;
-    margin: 1.25em auto;
+    margin: 0 auto 1.25em auto;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: #fff;
     line-height: 1.5em; }
+    .shoppingCart .shoppingCartItem h1 {
+      margin-bottom: 1em; }
+    .shoppingCart .shoppingCartItem img {
+      height: 250px;
+      display: block; }
+    .shoppingCart .shoppingCartItem button {
+      display: inline-block; }
