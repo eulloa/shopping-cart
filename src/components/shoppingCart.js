@@ -16,10 +16,22 @@ const ShoppingCart = (props) => {
 const ShoppingCartItem = (props) => {
 	return (
 		<div className="shoppingCartItem">
-			<h1>{props.item.name}</h1>
-			<img src={'/img/' + props.item.images[0]} alt={props.item.description} />
-			<button className="button" onClick={() => { props.removeFromCart(props.index); props.setModalVisibility(true); props.updateCartMessage('Removed from Cart!') }}>Remove</button>
-			<Link className="button" to={"/product/" + props.item.productID}>Product Info</Link>
+			<table>
+				<tr>
+					<th>{props.item.name}</th>
+					<th>Price</th>
+					<th>Quantity</th>
+				</tr>
+				<tr>
+					<td>
+						<img src={'/img/' + props.item.images[0]} alt={props.item.description} />
+						<button className="button" onClick={() => { props.removeFromCart(props.index); props.setModalVisibility(true); props.updateCartMessage('Removed from Cart!') }}>Remove</button>
+						<Link className="button" to={"/product/" + props.item.productID}>Product Info</Link>	
+					</td>
+					<td>${props.item.price * props.item.qty}</td>
+					<td>{props.item.qty}</td>
+				</tr>
+			</table>
 		</div>
 	)
 }

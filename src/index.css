@@ -157,7 +157,8 @@ a, button, input[type=submit], .btn {
   background-color: #febd69;
   padding: .5em 1em;
   margin: 1em 1em 0 0;
-  font-weight: bold; }
+  font-weight: bold;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2); }
 
 .button:hover {
   background-color: #232f3e;
@@ -423,6 +424,18 @@ footer {
     border-radius: 4px;
     background-color: #fff;
     line-height: 1.5em; }
+    .shoppingCart .shoppingCartItem table {
+      width: 100%; }
+      .shoppingCart .shoppingCartItem table th {
+        text-align: left;
+        padding-bottom: .5em;
+        font-weight: 500; }
+        .shoppingCart .shoppingCartItem table th:last-child {
+          text-align: right; }
+      .shoppingCart .shoppingCartItem table td {
+        vertical-align: top; }
+        .shoppingCart .shoppingCartItem table td:last-child {
+          text-align: right; }
     .shoppingCart .shoppingCartItem h1 {
       margin-bottom: 1em; }
     .shoppingCart .shoppingCartItem img {
