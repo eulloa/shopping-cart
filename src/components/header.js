@@ -14,7 +14,6 @@ class Header extends React.Component {
 		this.listenForScroll = this.listenForScroll.bind(this);
 		this.shouldBeSticky = this.shouldBeSticky.bind(this);
 		this.updateScrollTop = this.updateScrollTop.bind(this);
-		this.totalItemsInCart = this.totalItemsInCart.bind(this);
 	}
 
 	handleOnChange = (e) => {
@@ -50,15 +49,6 @@ class Header extends React.Component {
 		}
 	}
 
-	totalItemsInCart = () => {
-		let cart = this.props.shoppingCart
-		let count = 0
-		cart.forEach((item) => {
-			count += item.qty
-		})
-		return count
-	}
-
 	componentWillMount() {
 		this.listenForScroll();
 	}
@@ -79,7 +69,7 @@ class Header extends React.Component {
 							</select>
 						</label>
 					</form>
-					<Link to="/cart"><h2><span>{this.totalItemsInCart()}</span></h2></Link>
+					<Link to="/cart"><h2><span>{this.props.totalCartItems}</span></h2></Link>
 				</nav>
 			</header>
 		)

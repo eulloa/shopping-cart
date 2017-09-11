@@ -14,15 +14,26 @@ import Footer from './footer';
 class Main extends React.Component {
 	constructor(props) {
 		super(props);
+
+		this.totalCartItems = this.totalCartItems.bind(this);
+	}
+
+	totalCartItems = () => {
+		let cart = this.props.shoppingCart
+		let count = 0
+		cart.forEach((item) => {
+			count += item.qty
+		})
+		return count
 	}
 
 	render() {
 		return (
 			<main>
-				<Header {...this.props} />
+				<Header {...this.props} totalCartItems={this.totalCartItems()} />
 				<Switch>
 					<Route exact path="/" component={() => <ProductGrid {...this.props} />}/>
-					<Route exact path="/cart" component={() => <ShoppingCart {...this.props} />}/>
+					<Route exact path="/cart" component={() => <ShoppingCart {...this.props} totalCartItems={this.totalCartItems()} />}/>
 					<Route path="/product/:productID" render={({match}) => <ProductSingleView {...this.props} match={match} />} />
 					<Route component={NotFound} />
 				</Switch>

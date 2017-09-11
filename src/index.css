@@ -415,7 +415,9 @@ footer {
     font-size: 0.8em; }
 
 .shoppingCart {
-  padding: 1.25em 1em; }
+  padding: 1.25em 1em;
+  width: 75%;
+  display: inline-block; }
   .shoppingCart .shoppingCartItem {
     background-color: #fff;
     padding: 1.25em;
@@ -443,3 +445,18 @@ footer {
       display: block; }
     .shoppingCart .shoppingCartItem button {
       display: inline-block; }
+
+.sidebar {
+  display: inline-block;
+  float: right;
+  width: 24%;
+  margin: 1.25em 1em 0 0;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1.25em 1em;
+  position: fixed;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+  max-width: 336px;
+  /* 24% of 1400px max-width of site */ }
+  .sidebar h1 {
+    font-weight: 500; }

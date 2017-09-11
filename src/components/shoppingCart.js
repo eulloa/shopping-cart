@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from './sidebar';
 
 const ShoppingCart = (props) => {
 	if (!props.shoppingCart.length) {
@@ -7,8 +8,11 @@ const ShoppingCart = (props) => {
 	}
 
 	return (
-		<div className="shoppingCart container">
-			{props.shoppingCart.map((item, i) => <ShoppingCartItem key={i} index={i} item={item} {...props} />)}
+		<div className="container">
+			<div className="shoppingCart">
+				{props.shoppingCart.map((item, i) => <ShoppingCartItem key={i} index={i} item={item} {...props} />)}
+			</div>
+			<Sidebar {...props} totalCartItems={props.totalCartItems} />
 		</div>
 	)
 }
