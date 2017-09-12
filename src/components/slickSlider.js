@@ -16,7 +16,7 @@ const SlickSlider = (props) => {
 			<Slider {...settings} className="slider">
 				{products.map((product, i) => {
 					return (
-						<div key={i} className={i === 0 ? 'book': i === 1 ? 'music': ''}>
+						<div key={i} className={i === 0 ? 'book': i === 1 ? 'music': i === 2 ? 'shoes': ''}>
 							<div className="shadow"></div>
 							<div className="product-info">
 								<figure>

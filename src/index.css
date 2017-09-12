@@ -358,7 +358,7 @@ header {
   line-height: 1.5em; }
 
 .productGrid figure img {
-  height: 250px; }
+  height: 200px; }
 
 .productGrid figcaption {
   padding: 1em; }
@@ -441,8 +441,9 @@ footer {
     .shoppingCart .shoppingCartItem h1 {
       margin-bottom: 1em; }
     .shoppingCart .shoppingCartItem img {
-      height: 250px;
-      display: block; }
+      height: 100px;
+      display: block;
+      margin-bottom: 1em; }
     .shoppingCart .shoppingCartItem button {
       display: inline-block; }
 

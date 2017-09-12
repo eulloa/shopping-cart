@@ -101,6 +101,10 @@
     background: url(/img/book-slide-bg.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
+.slick-slide.shoes {
+    background: url(/img/shoe-slide-bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
 .slick-slide .shadow {
     position: absolute;
     top: 0;

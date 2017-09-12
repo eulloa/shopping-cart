@@ -353,7 +353,7 @@ header {
 }
 
 .productGrid figure img {
-	height: 250px;
+	height: 200px;
 }
 
 .productGrid figcaption {
@@ -472,8 +472,9 @@ footer {
 		}
 
 		img {
-			height: 250px;
+			height: 100px;
 			display: block;
+			margin-bottom: 1em;
 		}
 
 		button {

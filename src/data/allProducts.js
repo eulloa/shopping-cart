@@ -66,6 +66,28 @@ const allProducts = [
 		images: [
 			'microwave.jpg'
 		]
+	},
+	{
+		productID: 5,
+		name: 'Converse All Star Shoes',
+		price: 39.99,
+		description: 'Created in 1917, the Converse Chuck Taylor All-Star has been evolving for a hundred years while managing to keep it classic: a canvas upper, all-star emblem, and vulcanized rubber sole are known all over the world. The silhouette stays true in both high-top and oxford styles: both looks can handle whatever.',
+		features: [
+			'Durable canvas you know and love',
+			'Outsole pattern for traction (make sure you don\'t fall and eat it)',
+			'Star logo path says you get it',
+			'Silhouette looks good, has been good for decades, will be good tomorrow, etc.'
+		],
+		rating: 4.5,
+		category: 'CLOTHES',
+		featured: {
+			description: 'The Chuck Taylor All-Star is a staple, stay simply classic.'
+		},
+		images: [
+			'chucks.png',
+			'chucks-1.png',
+			'chucks-2.png'
+		]
 	}
 ]
 

@@ -18,7 +18,7 @@ describe('shoppingCart reducer', () => {
 			type: actionTypes.ADD_TO_CART,
 			cartItem
 		})).toEqual([
-			{ name: 'My awesome product' }
+			{ name: 'My awesome product', qty: 1 }
 		])
 	})
 
