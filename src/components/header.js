@@ -57,7 +57,7 @@ class Header extends React.Component {
 		return (
 			<header>
 				<nav className={this.state.isSticky ? 'sticky' : ''}>
-					<h1><Link to="/">home</Link></h1>
+					<h1><Link to="/"></Link></h1>
 					<form>
 						<label>
 							<select onChange={this.handleOnChange}>

@@ -263,6 +263,21 @@ main {
 header {
 	height: 84px;
 
+	h1 {
+		position: absolute;
+		left: 1.25em;
+		top: 50%;
+		transform: translateY(-50%);
+
+		a {
+			height: 40px;
+			width: 40px;
+			background: url(/img/logo.svg) 50% 50% no-repeat;
+			background-size: cover;
+			display: inline-block;
+		}
+	}
+
 	nav {
 		height: 84px;
 		position: relative;
@@ -280,10 +295,6 @@ header {
 			position: fixed;
 			margin-top: 0;
 		}
-	}
-
-	h1 {
-		float: left;
 	}
 
 	form {
@@ -320,10 +331,10 @@ header {
 	}
 
 	h2 {
-		width: 35px;
-		height: 35px;
+		width: 40px;
+		height: 40px;
 		position: absolute;
-		background: transparent url(/img/shopping-cart.png) no-repeat;
+		background: transparent url(/img/shopping-cart.svg) no-repeat;
 		background-position: 50% 50%;
 		background-size: cover;
 		right: 1.25em;
@@ -332,9 +343,9 @@ header {
 
 	span {
 		position: absolute;
-		left: 30%;
-		top: 0;
-		color: $orange;
+		left: 42%;
+		top: -4px;
+		color: $white;
 	}
 }
 
