@@ -435,6 +435,8 @@ footer {
     border-radius: 4px;
     background-color: #fff;
     line-height: 1.5em; }
+    .shoppingCart .shoppingCartItem:last-child {
+      margin: 0 auto; }
     .shoppingCart .shoppingCartItem table {
       width: 100%; }
       .shoppingCart .shoppingCartItem table th {

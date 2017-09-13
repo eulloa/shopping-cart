@@ -456,6 +456,10 @@ footer {
 		background-color: $white;
 		line-height: 1.5em;
 
+		&:last-child {
+			margin: 0 auto;
+		}
+
 		table {
 			width: 100%;
 

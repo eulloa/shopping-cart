@@ -5,7 +5,7 @@ import { CategoryFilters } from '../actions/actionTypes';
 
 const ProductGrid = (props) => {
 	let products = props.visibilityFilter === CategoryFilters.ALL ? props.allProducts :
-		props.allProducts.filter(p => { return p.category === props.visibilityFilter })
+		props.allProducts.filter(p => p.category === props.visibilityFilter )
 
 	return (
 		<div className="container">

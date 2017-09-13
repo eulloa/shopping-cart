@@ -28,7 +28,7 @@ class Sidebar extends React.Component {
 }
 
 Sidebar.propTypes = {
-    totalCartItems: PropTypes.number
+    totalCartItems: PropTypes.number.isRequired
 }
 
 export default Sidebar;

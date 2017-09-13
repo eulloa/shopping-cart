@@ -66,6 +66,7 @@ class Header extends React.Component {
 								<option value="kitchen">kitchen</option>
 								<option value="music">music</option>
 								<option value="technology">technology</option>
+								<option value="clothes">clothes</option>
 							</select>
 						</label>
 					</form>
