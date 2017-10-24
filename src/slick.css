@@ -166,3 +166,35 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+@media (max-width: 30em) /* 480px */ {
+    .slick-slide {
+        padding: 1em;
+        min-height: 250px;
+    }
+
+    .slick-next, .slick-prev {
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .slick-slider figure {
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+        margin-bottom: .35em;
+    }
+
+    .slick-slider figure img {
+        width: 100%;
+    }
+
+    .slick-slide .product-info {
+        display: block;
+        font-size: .75em;
+    }
+
+    .slick-slide .product-info section {
+        padding-left: 0;
+    }
+}
