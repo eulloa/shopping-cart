@@ -472,3 +472,13 @@ footer {
   /* 24% of 1400px max-width of site */ }
   .sidebar h1 {
     font-weight: 500; }
+
+@media (max-width: 30em) {
+  .product.single-view {
+    display: block; }
+    .product.single-view .child figure {
+      float: none;
+      margin: 0 0 .5em 0; }
+    .product.single-view ul.images.child li {
+      display: inline-block;
+      margin: 0 .75em .5em 0; } }
